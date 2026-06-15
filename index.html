@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator">
+    <form id="age-form" novalidate>
+      <div class="inputs">
+        <div class="input-group">
+          <label for="day">DAY</label>
+          <input type="text" id="day" placeholder="DD" maxlength="2" inputmode="numeric">
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="input-group">
+          <label for="month">MONTH</label>
+          <input type="text" id="month" placeholder="MM" maxlength="2" inputmode="numeric">
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+        <div class="input-group">
+          <label for="year">YEAR</label>
+          <input type="text" id="year" placeholder="YYYY" maxlength="4" inputmode="numeric">
+          <span class="error-message" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="submit-wrapper">
+        <div class="divider"></div>
+        <button type="submit" class="submit-btn" aria-label="Calculate age">
+          <img src="assets/images/icon-arrow.svg" alt="">
+        </button>
+      </div>
+    </form>
+    <div class="result">
+      <p><span class="number" id="years">--</span> years</p>
+      <p><span class="number" id="months">--</span> months</p>
+      <p><span class="number" id="days">--</span> days</p>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
